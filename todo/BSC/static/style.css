@@ -1,0 +1,47 @@
+/* body{
+   
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 31%, rgba(252,70,107,1) 100%);
+}
+#val{
+    float:left;
+}
+#search{
+    float:right;
+    height:2px;
+}
+#sear{
+    padding-left: 990px;
+}
+table,th{
+    border:1px solid black;
+}
+#show{
+    float: left;
+}
+#previous{
+    padding-left: 990px;
+}
+#next{
+    float:right;
+}
+#save:hover{
+    cursor: pointer;
+}
+#save{
+    background-color: blue;
+    
+} */
+
+
+/* .body{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 31%, rgba(252,70,107,1) 100%);
+    padding-top: 25px 15px ;
+    box-shadow: 0 0 10px black;
+    margin: 100px;
+    color:white;
+    font-style: italic;
+    cursor: pointer;
+
+} */

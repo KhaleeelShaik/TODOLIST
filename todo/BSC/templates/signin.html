@@ -1,0 +1,12 @@
+{% extends "todo.html" %}
+
+{% block content %}
+
+<form method="POST"style=text-align:center>
+    {% csrf_token %}
+    <h3>sign in now</h3>
+    <input type="text" placeholder="username" name="username"> <br><br>
+    <input type="text" placeholder="password" name="password"> <br><br>
+    <button type="submit">signin</button>
+
+{% endblock content %}

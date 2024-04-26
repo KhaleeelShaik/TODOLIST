@@ -1,0 +1,38 @@
+{% extends "todo.html" %}
+
+{% block content %}
+
+<form method="POST"style=text-align:center>
+    {% csrf_token %}
+
+    <h2> signup now </h2>
+
+
+    <label for="name">username</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="password">password</label>
+    <input type="password" id="password" name="password" required><br><br>
+    
+    <label for="confirmpassword">confirmpassword</label>
+    <input type="password" id="confirmpassword" name="confirmpassword" required><br><br>
+
+    <label for="task">task</label>
+    <input type="text" id="task" name="task" required><br><br>
+
+
+    <label for="due">due</label>
+    <input type="date" id="due" name="due"required><br><br>
+
+    <button>signup</button>
+</form>
+
+{% endblock content %}
+
+
+
+
+
+
+
+

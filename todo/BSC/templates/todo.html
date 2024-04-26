@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    {% block content %}
+
+    <form method = "POST"style=text-align:center>
+        {% csrf_token %}
+        <h3> TO DO APP</h3><br>
+        <label for="Task"></label>
+        <input type="text" placeholder="Enter a task here" id="task" name='task'>
+        <label for="due"></label>
+        <input type="date" placeholder="calender" id = "due" name='due'>
+        <input type="submit" value='SAVE'><br><br><br><br>
+        <label id='val'for='val'>show</label>
+        <select id="val" name="val">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4" selected>4</option>
+    </form>
+    </select>
+    <span id='val'>entries</span>
+ 
+    <label id="sear" class="search" for="search">search:</label>
+    <input type=" text" id="search" name="search"><br><br> 
+    </form> 
+
+{% comment %} <div style="align-items:end">
+        <form method="POST" action={% url "search" %} class="d-flex" role="search">
+          {% csrf_token %}
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search" id="search" >
+          <button class="btn btn-outline-success" type="submit">Search</button>
+          </div>
+        </form>   {% endcomment %}
+
+
+    
+    <button><a href="{% url 'display' %}">display</a></button>
+    {% comment %} <a href="{% url 'search' %}"><button>SEARCH</button></a>    {% endcomment %}
+{% endblock %}
+ 
+</body>
+</html>
+
+<style>
+    body{
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 31%, rgba(252,70,107,1) 100%);
+    padding-top: 25px 15px ;
+    box-shadow: 0 0 10px black;
+    margin: 100px;
+    color:white;
+    font-style: italic;
+    cursor: pointer;
+
+}
+</style>

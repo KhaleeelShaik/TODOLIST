@@ -1,0 +1,30 @@
+{% extends "todo.html" %}
+
+{% block content %}
+
+<form method="POST" style=text-align:center>
+    {% csrf_token %}
+    <h3>EDIT NOW</h3>
+
+    <label for="task">task</label>
+    <input type="text" id="task" name="task" required><br><br>
+
+    <label for="status">status</label>
+    <input type="text" id="status" name="status"required><br><br>
+
+    <label for="due">due</label>
+    <input type="date" id="due" name="due"required><br><br>
+
+    <button>EDIT</button>
+</form>
+
+{% endblock content %}
+
+
+
+
+
+
+
+
+
